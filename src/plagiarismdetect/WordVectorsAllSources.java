@@ -302,16 +302,10 @@ public class WordVectorsAllSources {
         return elapsed;
     }
     public static void main(String args[]) throws IOException {
-        //convertToBinary("/Users/mussandi/Word2Vec/GNewsW2Vsingle.ascii", "/Users/mussandi/Word2Vec/GNewsW2Vsingle.bin");
-        //System.exit(0);
+      
         long start = System.currentTimeMillis();
-        //Scanner keyboard = new Scanner (System.in);
         WordVectorsAllSources wv = new WordVectorsAllSources("/Users/mussandi/Word2Vec/GNewsW2Vsingle.bin");
         
-//        
-//        String suspeitoFile = "/Users/mussandi/Documents/SourcePAN12Time/DezBlocosPAN12.txt";
-//        LanguageUtils.loadFiles("/Users/mussandi/Documents/SourcePAN12Time/", -1, suspeitoFile);
-//        ArrayList<Pair<Integer, ArrayList<String>>> paragraphs = LanguageUtils.fileToParagraphs(suspeitoFile, true);
 
         String s1 = "/Users/mussandi/Documents/testes/teste/suspeito.txt";
         String s2 = "/Users/mussandi/Documents/testes/teste/suspeito2.txt";
@@ -325,54 +319,7 @@ public class WordVectorsAllSources {
         ArrayList<String> F = LanguageUtils.fileToList(f, true);
         
         
-//        final Plot plot = new Plot("Distances");
-//        ArrayList<Float> distances = wv.comparePhrase(S1, F, -1.0f);
-//        if(distances != null) plot.addSeries("s1", distances);
-//        distances = wv.comparePhrase(S2, F, -1.0f);
-//        if(distances != null) plot.addSeries("s2", distances);
-//        distances = wv.comparePhrase(S3, F, -1.0f);
-//        if(distances != null) plot.addSeries("s3", distances);
-//        distances = wv.comparePhrase(S4, F, -1.0f);
-//        if(distances != null) plot.addSeries("s4", distances);       
-        
-        
-        
-//        String s1 = "/Users/mussandi/Documents/testes/teste/parpha.txt";
-//        String f = "/Users/mussandi/Documents/testes/teste/fonte.txt";
-//        ArrayList<String> S1 = LanguageUtils.fileToList(s1, true);
-//        ArrayList<String> F = LanguageUtils.fileToList(f, true);
-//        
-//        final Plot plot = new Plot("Distances");
-//        ArrayList<Float> distances = wv.comparePhrase(S1, F, -1.0f);
-//        if(distances != null) plot.addSeries("s1", distances);
-        
-        
-//        for (int i = 0; i < paragraphs.size(); i++) {
-//            ArrayList<String> paragraph = paragraphs.get(i).getValue();
-//             System.out.println(paragraph.size());
-//            for (Pair<String, ArrayList<String>> file : LanguageUtils.files) {
-//                ArrayList<Float> distances = wv.comparePhrase(paragraph, file.getValue(), .8f);
-//                if(distances != null) plot.addSeries(file.getKey(), distances);
-//            }
-//            break;
-//        }
-//        plot.end();
-        
-        
-//        //convertToBinary("/Users/mussandi/Word2Vec/GNewsW2Vsingle.txt", "/Users/mussandi/Word2Vec/GNewsW2Vsingle.bin");
-//        System.out.println("insert a word or sentence:");
-//        String w = keyboard.next().toLowerCase();
-//        ///System.out.println(wv.distance("king", "queen"));
-//        //ArrayList<Pair<String, Float>> l = wv.distance("king was with queen"); // no insert using keyboard sentence.
-//        ArrayList<Pair<String, Float>> l = wv.distance(w);
-//        if(l != null) {
-//            System.out.println("---------------------------------------------");
-//            for (Pair<String, Float> pair : l) {
-//                System.out.println(pair.getKey() + "\t" + pair.getValue());
-//            }
-//            System.out.println("---------------------------------------------");
-//            System.out.println("");
-//        }
+
          timeCalculator(start);
     }
 
